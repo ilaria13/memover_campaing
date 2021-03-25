@@ -1,0 +1,188 @@
+.full-width {
+  background: var(--color-4);
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: calc(0.3 * var(--white-space));
+  padding-left: calc(0 * var(--white-space));
+}
+
+.social_icon {
+  padding-left: 1rem;
+  margin: 0%;
+  width: 38px;
+}
+
+.logo {
+  width: 13rem;
+  display: block;
+  margin: auto;
+  padding-top: calc(1.5 * var(--white-space));
+  padding-bottom: calc(1.5 * var(--white-space));
+}
+
+ul {
+  list-style: none;
+  padding-top: calc(1.5 * var(--white-space));
+  padding-bottom: calc(2 * var(--white-space));
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#videoBg {
+  object-fit: cover; /*the video covers the entire space without being stretched*/
+  object-position: center; /*the video will be center even when cut, you can put also a percentage if you to want it center (ex: 20% will be 20% from the left corner)*/
+  width: 100%;
+  min-height: 400px; /*the video can't be smaller than this height*/
+  /*max-height: 700px;*/
+}
+
+.video_section {
+  display: grid;
+}
+
+.video_section > * {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
+.video_section > img {
+  align-self: center;
+  justify-self: center;
+}
+
+.play_button {
+  width: 20em;
+}
+
+.big_title {
+  text-align: center;
+}
+
+.form {
+  background: var(--color-5);
+  padding: calc(2 * var(--white-space));
+}
+
+.form_section h2 {
+  padding-bottom: calc(1 * var(--white-space));
+}
+
+.expert_review > * {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: calc(0.5 * var(--white-space));
+}
+
+.expert_review img {
+  margin-bottom: calc(1 * var(--white-space));
+}
+
+.button_send {
+  width: 100%;
+  margin-top: calc(1 * var(--white-space));
+  margin-bottom: 0;
+}
+
+.banner_event {
+  background-color: var(--color-5);
+  padding: calc(2 * var(--white-space));
+}
+.banner_event > * {
+  text-align: center;
+}
+
+.banner_event > img {
+  padding-top: calc(2 * var(--white-space));
+}
+
+.journal > h1 {
+  text-align: center;
+  border-bottom: solid 1px black;
+  padding: calc(2 * var(--white-space));
+  margin: 0;
+}
+
+.banner_article {
+  margin: 0;
+  padding: calc(2 * var(--white-space));
+  border-bottom: solid 1px black;
+}
+
+.banner_article > article {
+  padding-right: calc(2 * var(--white-space));
+}
+
+article > h3 {
+  padding-top: calc(2 * var(--white-space));
+}
+
+.button_journal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button_journal > button {
+  margin: calc(2 * var(--white-space));
+}
+
+.pulse {
+  animation-name: pulsing;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pulsing {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .form_section {
+    padding: calc(2 * var(--white-space));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+  }
+  .banner_article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+}
+
+@media (max-width: 799px) {
+  .form_section {
+    padding: calc(2 * var(--white-space));
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+  .banner_article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+}

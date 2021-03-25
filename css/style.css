@@ -1,0 +1,196 @@
+/* change these */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto+Condensed:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently, 
+name the variables differently, 
+use the fonts in other ways in the font hierarchy etc. */
+
+/* change these */
+:root {
+  --bg-color: rgb(255, 255, 255);
+  --link-color: rgb(0, 0, 0);
+  --link-hover-color: #0093be;
+  --color-4: rgb(0, 0, 0);
+  --color-5: rgb(228, 228, 228);
+
+  --primary-font: "DM Sans", sans-serif;
+  --secondary-font: "DM Sans", sans-serif;
+  --detail-font: "Roboto Condensed", sans-serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+header {
+  padding: calc(1 * var(--white-space));
+}
+
+header,
+footer {
+  margin: 0 auto;
+}
+
+main {
+  background-color: var(--bg-color);
+}
+
+button {
+  transition: all 3s;
+}
+
+button:hover {
+  background-color: var(--link-hover-color);
+  transform: scale(1.02);
+}
+
+button:active {
+  background-color: var(--bg-color);
+}
+
+button {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 3px;
+  border: none;
+  background: var(--link-color);
+  text-align: center;
+  text-decoration: none;
+  font: 1em/1 var(--secondary-font);
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+}
+
+.secondary-button {
+  background: var(--color-5);
+}
+
+button:focus,
+button:active,
+button:focus-within {
+  outline: 0;
+  border: none;
+}
+
+html {
+  font-size: 100%;
+  font-family: var(--primary-font);
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin-bottom: calc(4 * var(--white-space));
+}
+
+.typography-main {
+  color: var(--main-text-color);
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--color-4);
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  margin-block-start: 0em;
+}
+
+h3 {
+  font-family: var(--detail-font);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: var(--color-4);
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 0.9rem;
+  font-family: var(--secondary-font);
+  line-height: 1.5;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  font-size: 0.9rem;
+  font-family: var(--detail-font);
+  color: var(--link-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: calc(1 * var(--white-space));
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: calc(0.5 * var(--white-space));
+  font-size: 0.8rem;
+}
+
+input,
+textarea {
+  display: block;
+  padding: calc(1 * var(--white-space));
+  border: none;
+  border-radius: 0.2rem;
+  font-family: var(--primary-font);
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  width: 100%;
+}
+
+input:valid,
+textarea:valid,
+#input_datetime:valid {
+  border: 1px solid green;
+}
+input:invalid,
+textarea:invalid {
+  border: 1px solid red;
+}
+
+input:placeholder-shown {
+  border: 1px solid transparent;
+}
+
+#input_datetime {
+  border: none;
+}
+
+footer {
+  padding-top: calc(2 * var(--white-space));
+  padding-bottom: calc(2 * var(--white-space));
+  text-align: center;
+  font-family: var(--secondary-font);
+  color: var(--bg-color);
+  background: var(--color-4);
+}

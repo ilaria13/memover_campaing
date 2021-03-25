@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Feel the freedom today</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/landingpage.css" />
+    
+  </head>
+
+  <body>
+    <div class="full-width">
+      <header>
+        <div class="header-wrapper">
+          <img class="social_icon" src="img/icon_facebook.svg" alt="facebook icon"/>
+          <img class="social_icon" src="img/icon_linkedin.svg" alt="facebook icon"/>
+          <img class="social_icon" src="img/icon_website.svg" alt="facebook icon"/>
+        </div>
+      </header>
+
+    <main>
+      <div>
+        <img class="logo" src="img/me-mover-logo.svg" alt="logotype negative"/>
+      </div>
+      <ul>
+        <li><a href="#form">SIGN UP</a></li>
+        <li><a href="#event">NEWS</a></li>
+        <li><a href="#journal">JOURNAL</a></li>
+      </ul>
+      <!-- video start-->
+    <section class="video_section">
+    <video id="videoBg" poster="img/video_cover.webp" controls>
+      <source src="img/me-mover_1minute.webm" type="video/mp4">
+    </video>
+    <img class="play_button pulse" src="img/play-button-01.svg">
+    </section>
+<!-- form section-->
+    <div id="form" class="big_title"><h1>Become a Me-mover!</h1></div>
+    <section class="form_section">
+      <div class="form">
+         <h2>Schedule your first free trial today!</h2>
+          <form name="contact" method="POST" data-netlify="true" autocomplete="on">
+           <p>
+             <label for="input_name"> Name* </label>
+             <input
+               id="input_name"
+               type="text"
+               name="name"
+               placeholder="Jan Larsen"
+              required/>
+          </p>
+           <p>
+             <label for="input_email">E-mail*</label>
+             <input
+               id="input_email"
+               type="email"
+               name="email"
+               placeholder="jan@mail.com"
+               required/>
+          </p>
+           <p>
+             <label for="input_phone">Phone Number*</label>
+             <input id="input_phone" type="tel" placeholder="+45 12345678" />
+           </p>
+
+          <p>
+           <label for="input_datetime">Date and hour*</label>
+           <input
+            id="input_datetime"
+           type="datetime-local"
+            placeholder="13/05/2021, 12:30"
+            name="data_time"
+            required/>
+         </p>
+         <button class="button_send"><p>SEND</p></button>
+        </form>
+      </div>
+       <article class="expert_review">
+         <img src="img/expert_portrait1.webp" alt="expert1"/>
+          <h3>Charlotte Hansen, personal trainer</h3>
+          <p>See the interview</p>
+       </article>
+       <article class="expert_review">
+         <img src="img/expert_portrait2.webp" alt="expert1"/>
+          <h3>Lars Jørgensen, former athlete</h3>
+          <p>See the interview</p>
+       </article>
+    </section>
+ <!-- end form and expert-->
+
+ <div id="event" class="banner_event">
+  <h1>10 Stops 10 km</h1>
+  <p><em>25th April 2021</em></p>
+  <p>Discover 10 amazing spots around Copenhagen with your fellows.<br>10 stops 10km is an event in support of Wolrd Health Organization.</p>
+  <img src="img/banner_event.gif" alt="banner event">
+  
+   
+ </div>
+ <section id="journal" class="journal">
+ <h1>Journal</h1>
+ <section class="banner_article">
+  <img src="img/article-img.webp" alt="recipe">
+  <article><h2>Let's cook with Andreas Lor!</h2>
+      <p><em>
+      "My favorite baked meatball recipe — it’s easy to make, full of great flavor, and incredibly versatile."
+      </em></p>
+      <p>I also love these homemade meatballs because they are baked instead of fried,
+      which makes them a touch healthier and also considerably easier to cook.
+      They can easily be made gluten-free if you would like.  They freeze beautifully for later, if you would like.  </p>
+      <p>Basically, this is the meatball recipe that I use for pretty much everything and it is always, always a winner.
+        So be sure to bookmark this one, and let’s make a batch together!</p>
+      <h3>read the full recipe</h3>
+  </article>
+  </section>
+  <section class="banner_article">
+    <img src="img/article-img2" alt="recipe">
+    <article><h2>Let's cook with Andreas Lor!</h2>
+        <p><em>
+        "My baked meatball recipe — it’s easy to make, full of great flavor, and incredibly versatile."
+        </em></p>
+        <p>I also love these homemade meatballs because they are baked instead of fried,
+        which makes them a touch healthier and also considerably easier to cook.
+        They can easily be made gluten-free if you would like.  They freeze beautifully for later, if you would like.  </p>
+        <p>Basically, this is the meatball recipe that I use for pretty much everything and it is always, always a winner.
+          So be sure to bookmark this one, and let’s make a batch together!</p>
+        <h3>read the full recipe</h3>
+    </article>
+    </section>
+    <div class="button_journal"><button>read all articles</button></div>
+    
+  </section>
+
+      <footer>
+       <h2>Me-Mover ApS</h2>
+       <p>Jægersborg Alle 1D, 2920 Charlottenlund, CVR:</p>
+       <p>41369698 – Tel: +45 50 22 22 40 | info@me-mover.dk</p>
+       <p>Åbent: 10:00 – 16:00 – Mandag til Fredag</p>
+      </footer>
+    <script src="play.js"></script>
+  </body>
+</html>
